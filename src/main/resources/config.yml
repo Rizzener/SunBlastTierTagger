@@ -1,0 +1,156 @@
+cooldown-update: 300 #В секундах (300 сек - 5 минут)
+messages:
+  prefix: '&6&lТИРЫ: &f'
+  no-permission: 'У вас недостаточно прав!'
+  no-allowed: 'Нет доступных команд.'
+  unknown: 'Команда не найдена.'
+  only-players: "Эта команда предназначена только для игроков"
+  unkown-player: "Игрок не найден"
+  commands:
+    info:
+      usage: "Посмотреть тиры: &a/tiers info"
+      error: "Что то сломалось..."
+      me-message:
+        - ''
+        - '&e{player}'
+        - ' &bТиры:'
+        - '  &6Sword: &f{sword}'
+        - '  &aVanilla: &f{vanilla}'
+        - '  &8Netherite: &f{netherite}'
+        - ''
+        - 'Выбран для отображения: {selected}'
+        - '&a/tiers menu &fЧто бы выбрать другой'
+        - ''
+      other-message:
+        - ''
+        - '&e{player}'
+        - ' &bТиры:'
+        - '  &6Sword: &f{sword}'
+        - '  &aVanilla: &f{vanilla}'
+        - '  &8Netherite: &f{netherite}'
+        - ''
+    menu:
+      usage: "Открыть меню выбора категории: &a/tiers menu"
+      error: "Что то сломалось..."
+    reload:
+      usage: "Перезагрузить конфиг: &a/tiers reload"
+      successfully: "&aВы перезагрузили конфиг"
+      error: "Что то сломалось..."
+menu:
+  size: 45 #9/18/27/36/45/54
+  title: "Выбери категорию"
+  Sword-selected: "&6Вы выбрали категорию &eSword"
+  Vanilla-selected: "&6Вы выбрали категорию &aVanilla"
+  Netherite-selected: "&6Вы выбрали категорию &8Netherite"
+  items: #material: ОБЯЗАТЕЛЬНО КАПСОМ
+    SwordTier:
+      type: sword
+      material: DIAMOND_SWORD
+      slot: 22
+      displayname: "&eSword Tier"
+      lore:
+        - '&fНажмите что бы применить'
+      enchantments:
+        DAMAGE_ALL: 1
+      flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_ENCHANTS
+    VanillaTier:
+      type: vanilla
+      material: END_CRYSTAL
+      slot: 21
+      displayname: "&aVanilla Tier"
+      lore:
+        - '&fНажмите что бы применить'
+      enchantments:
+        DAMAGE_ALL: 1
+      flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_ENCHANTS
+    Information:
+      type: item
+      material: WRITABLE_BOOK
+      slot: 13
+      displayname: "&eИнформация"
+      lore:
+        - '§6Выберите категорию вашего тира.'
+        - '§6Категория которую вы выберите,'
+        - '§6будет отображаться над вами.'
+        - ''
+        - '§bВаши тиры:'
+        - '§eSword: §f{Sword}'
+        - '§aVanilla: §f{Vanilla}'
+        - '§7Netherite: §f{Netherite}'
+        - ''
+      enchantments:
+        DAMAGE_ALL: 1
+      flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_ENCHANTS
+    NetheriteTier:
+      type: netherite
+      material: NETHERITE_CHESTPLATE
+      slot: 23
+      displayname: "&8Netherite Tier"
+      lore:
+        - '&fНажмите что бы применить'
+      enchantments:
+        DAMAGE_ALL: 1
+      flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_ENCHANTS
+    OrangeFiller:
+      type: item
+      material: ORANGE_STAINED_GLASS_PANE
+      slots:
+        - 0
+        - 1
+        - 7
+        - 8
+        - 9
+        - 17
+        - 20
+        - 24
+        - 27
+        - 31
+        - 35
+        - 36
+        - 37
+        - 43
+        - 44
+      displayname: " "
+      lore:
+        - ''
+    GrayFiller:
+      type: item
+      material: GRAY_STAINED_GLASS_PANE
+      slots:
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 10
+        - 11
+        - 12
+        - 14
+        - 15
+        - 16
+        - 18
+        - 19
+        - 25
+        - 26
+        - 28
+        - 29
+        - 30
+        - 32
+        - 33
+        - 34
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+      displayname: " "
+      lore:
+        - ''
